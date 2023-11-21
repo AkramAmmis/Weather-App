@@ -1,3 +1,3 @@
 # Weather-App
 Simple app to get weather data for a specific city by flask fremwork
-* in this file '.env' you need to add api_key from openweathermap.org
+* An .env file must be created in which API_KEY and SECRET_KEY are added.
