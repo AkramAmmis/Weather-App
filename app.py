@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, flash
 from weather import get_current_weather_data as wetter
+import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'WERAGAERGQERG'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 @app.route('/', methods=['POST', 'GET'])
 def hello_world():
